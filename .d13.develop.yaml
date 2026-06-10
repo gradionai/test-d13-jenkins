@@ -1,0 +1,5 @@
+services:
+  private:
+    - name: demo-app
+      details:
+        replicas: 1

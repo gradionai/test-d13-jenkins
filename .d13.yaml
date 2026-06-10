@@ -1,0 +1,29 @@
+services:
+  private:
+    - name: demo-app
+      enable: true
+      d13Version: 1.0.0
+      branch:
+        - develop
+      gitSecret: false
+      dockerBuild:
+        dockerFile: demo-app/Dockerfile
+        context: demo-app
+      details:
+        hostname:
+          - host: demo-app.devops.nfq.asia
+            paths:
+              - /
+        port: 8080
+        replicas: 1
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+        resources:
+          requests:
+            cpu: 50m
+            memory: 50Mi
+          limits:
+            cpu: 100m
+            memory: 256Mi
