@@ -4,7 +4,7 @@ pipeline {
 
   environment {
         D13_BRANCH     = 'd13_with_sidecar'
-        D13_PROJECT    = 'test-d13-jenkins'
+        D13_PROJECT    = 'gradionai'
         D13_REPOSITORY = 'test-d13-jenkins'
   }
 
