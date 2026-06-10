@@ -1,3 +1,4 @@
+contacts: []
 services:
   private:
     - name: demo-app
