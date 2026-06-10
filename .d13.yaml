@@ -12,7 +12,7 @@ services:
         context: demo-app
       details:
         hostname:
-          - host: demo-app.devops.nfq.asia
+          - host: demo-app.d13.nfq-asia.com
             paths:
               - /
         port: 8080
